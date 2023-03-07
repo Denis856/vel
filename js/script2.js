@@ -26,6 +26,7 @@ function addToCard(item) {
    img.setAttribute('src',item.children[2].children[0].currentSrc);
    img.classList.add('img01');
    var title = document.createElement('p');
+   title.classList.add('dis_no');
    title.innerText = item.children[3].innerText;
    var color = document.createElement('button');
    if(item.children[6].children[0].classList.contains('active2')) {
@@ -37,23 +38,29 @@ function addToCard(item) {
    }
    var label = document.createElement('p');
    label.classList.add('tyu');
+   label.classList.add('dis_no');
    label.innerText = item.children[4].innerText;
    var select = document.createElement('button');
    if(item.children[5].children[0].classList.contains('active')) {
       select.innerText = item.children[5].children[0].textContent;
       select.classList.add('border');
+      select.classList.add('dis_no');
    } else if(item.children[5].children[1].classList.contains('active')) {
       select.innerText = item.children[5].children[1].textContent;
       select.classList.add('border');
+      select.classList.add('dis_no');
    } else if(item.children[5].children[2].classList.contains('active')) {
       select.innerText = item.children[5].children[2].textContent;
       select.classList.add('border');
+      select.classList.add('dis_no');
    } else if(item.children[5].children[3].classList.contains('active')) {
       select.innerText = item.children[5].children[3].textContent;
       select.classList.add('border');
+      select.classList.add('dis_no');
    } else if(item.children[5].children[4].classList.contains('active')) {
       select.innerText = item.children[5].children[4].textContent;
       select.classList.add('border');
+      select.classList.add('dis_no');
    }
    var delBtn = document.createElement('img');
    delBtn.setAttribute('src',document.querySelector('.img0').currentSrc);

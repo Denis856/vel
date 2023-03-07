@@ -276,6 +276,9 @@ $color: #E0BEA2;
          bottom: -10px;
          border-radius: 50%;
          font-size: 14px;
+         @media(max-width: 650px) {
+            right: 0;
+         }
       }
    }
    &__info1 {
@@ -855,7 +858,6 @@ $color: #E0BEA2;
       }
       @media(max-width: $wd3) {
          grid-template-columns: repeat(2, 1fr);
-         row-gap: 10px;
          column-gap: 5px;
       }
       @media(max-width: 480px) {
@@ -867,6 +869,9 @@ $color: #E0BEA2;
       position: relative;
       overflow: hidden;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &:hover {
          .item2__img {
             transform: scale(1.1);
@@ -945,6 +950,9 @@ $color: #E0BEA2;
       margin: 0 auto;
       position: relative;
       padding: 0 0 5px 0;
+      @media(max-width: 650px) {
+         padding: 0 0 10px 0;
+      }
       span {
          position: absolute;
          right: 50px;
@@ -954,12 +962,18 @@ $color: #E0BEA2;
    &__price {
       font-weight: 700;
       margin: 0 0 5px 0;
+      @media(max-width: 650px) {
+         margin: 0 0 15px 0;
+      }
    }
    &__size_block {
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 0 5px 0;
+      @media(max-width: 650px) {
+         margin: 0 0 15px 0;
+      }
    }
    &__sixe {
       font-size: 16px;
@@ -974,6 +988,9 @@ $color: #E0BEA2;
       &.active {
          color: #000;
          font-size: 17px;
+      }
+      @media(max-width: 650px) {
+         margin-right: 20px;
       }
    }
    &__color_block {
@@ -995,6 +1012,9 @@ $color: #E0BEA2;
          width: 24px;
          height: 24px;
          border: .3px solid #000;
+      }
+      @media(max-width: 650px) {
+         margin-right: 20px;
       }
    }
    &__color2 {
@@ -1066,6 +1086,9 @@ $color: #E0BEA2;
 .border {
    padding: 16px 30px;
    border: .3px solid #252525;
+   @media(max-width: 500px) {
+      padding: 5px 10px;
+   }
 }
 
 .tyu {
@@ -1081,12 +1104,20 @@ $color: #E0BEA2;
 .img01 {
    width: 95px;
    height: 110px;
+   @media(max-width: 500px) {
+      width: 80px;
+      height: 90px;
+   }
 }
 
 .little {
    width: 25px;
    height: 25px;
    cursor: pointer;
+   @media(max-width: 500px) {
+      width: 20px;
+      height: 20px;
+   }
 }
 
 .page0 {
@@ -1099,8 +1130,17 @@ $color: #E0BEA2;
 }
 
 .dis_no {
+   @media(max-width: 500px) {
+      font-size: 13px;
+   }
 }
 
 .height {
    min-height: 20px;
+}
+
+.header__basket {
+   @media(max-width: 650px) {
+      padding: 0 10px 0 0;
+   }
 }

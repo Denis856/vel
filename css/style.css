@@ -340,6 +340,11 @@ html, body {
   border-radius: 50%;
   font-size: 14px;
 }
+@media (max-width: 650px) {
+  .header__basket span {
+    right: 0;
+  }
+}
 .header__info1 {
   margin-left: 100px;
 }
@@ -1131,7 +1136,6 @@ html, body {
   .part2__items {
     -ms-grid-columns: 1fr 5px 1fr;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;
     -webkit-column-gap: 5px;
        -moz-column-gap: 5px;
             column-gap: 5px;
@@ -1148,6 +1152,16 @@ html, body {
   position: relative;
   overflow: hidden;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .part2__item:hover .item2__img {
   -webkit-transform: scale(1.1);
@@ -1246,6 +1260,11 @@ html, body {
   position: relative;
   padding: 0 0 5px 0;
 }
+@media (max-width: 650px) {
+  .item2__title {
+    padding: 0 0 10px 0;
+  }
+}
 .item2__title span {
   position: absolute;
   right: 50px;
@@ -1254,6 +1273,11 @@ html, body {
 .item2__price {
   font-weight: 700;
   margin: 0 0 5px 0;
+}
+@media (max-width: 650px) {
+  .item2__price {
+    margin: 0 0 15px 0;
+  }
 }
 .item2__size_block {
   display: -webkit-box;
@@ -1266,6 +1290,11 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 0 5px 0;
+}
+@media (max-width: 650px) {
+  .item2__size_block {
+    margin: 0 0 15px 0;
+  }
 }
 .item2__sixe {
   font-size: 16px;
@@ -1282,6 +1311,11 @@ html, body {
 .item2__sixe.active {
   color: #000;
   font-size: 17px;
+}
+@media (max-width: 650px) {
+  .item2__sixe {
+    margin-right: 20px;
+  }
 }
 .item2__color_block {
   display: -webkit-box;
@@ -1310,6 +1344,11 @@ html, body {
   width: 24px;
   height: 24px;
   border: 0.3px solid #000;
+}
+@media (max-width: 650px) {
+  .item2__color {
+    margin-right: 20px;
+  }
 }
 .item2__color2 {
   background: #6F83A4;
@@ -1392,6 +1431,11 @@ html, body {
   padding: 16px 30px;
   border: 0.3px solid #252525;
 }
+@media (max-width: 500px) {
+  .border {
+    padding: 5px 10px;
+  }
+}
 
 .tyu {
   font-family: "Raley Bold", sans-serif;
@@ -1406,11 +1450,23 @@ html, body {
   width: 95px;
   height: 110px;
 }
+@media (max-width: 500px) {
+  .img01 {
+    width: 80px;
+    height: 90px;
+  }
+}
 
 .little {
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .little {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .page0 {
@@ -1427,6 +1483,18 @@ html, body {
           flex-direction: column;
 }
 
+@media (max-width: 500px) {
+  .dis_no {
+    font-size: 13px;
+  }
+}
+
 .height {
   min-height: 20px;
+}
+
+@media (max-width: 650px) {
+  .header__basket {
+    padding: 0 10px 0 0;
+  }
 }
